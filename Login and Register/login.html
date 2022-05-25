@@ -4,9 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Login Page</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="text-hero">
+            <h1>
+                Sign In to Learn <br>
+                How to Plant
+            </h1>
+            <p>
+                When you are attracted by a plant grown 
+                by yourself, happiness is priceless.  
+            </p>
+            <p>If you have no account please</p>
+            <a href="#">register new account</a>
+        </div>
+
+        <div class="form">
+            <form>
+                <div class="form-group">
+                    <label class="control-label">Email</label> <br>
+                    <input class="form-control" name="email" id="email" type="email" placeholder="Your Email" >
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Password</label><br>
+                    <input class="form-control" name="password" id="password" type="password" placeholder="Enter Password" >
+                </div>
+                <button class="secondary">Sign In</button>
+                <p class="text-or">or continue with </p>
+                <button class="btn-google"><img src="assets/images/google.svg" alt="">Sign In with Google</button><br>
+                <button class="btn-fb"><img src="assets/images/fb.svg" alt="">Sign In with Facebook</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
