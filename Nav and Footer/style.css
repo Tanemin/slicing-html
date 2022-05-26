@@ -57,6 +57,7 @@ a {
 .footer {
     display: grid;
     line-height: 30px;
+    margin-top: 40px;
 }
 
 .footer .footer-title {
@@ -73,6 +74,8 @@ a {
     grid-template-columns: repeat(4, 1fr);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 2rem;
+    border-bottom: 1px solid #e5e5e5;
+    border-top: 1px solid #e5e5e5;
 }
 
 .footer .footer-content .footer-logo {

@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: "Quicksand", sans-serif;
+}
+
+.detail-header {
+    width: 800px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.detail-header h2 {
+    line-height: 45px;
+}
+.detail-header p {
+    line-height: 25px;
+}
+
+.detail-header .detail-poster img {
+    margin-top: 50px;
+    width: 100%;
+    clip-path: polygon(0 0, 100% 0, 95% 100%, 5% 100%);
+    border-radius: 50px;
+}
+
+.detail-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* margin: 50px; */
+}
+.detail-content .detail-information {
+    margin: 0 50px;
+}
+.detail-content .detail-transaction {
+    margin: 0 50px;
+
+}.detail-content img , .detail-review img {
+    width: 100px;
+}
