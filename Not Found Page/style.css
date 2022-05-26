@@ -28,9 +28,9 @@ Main Content
     margin-right: auto;
 }
 
-.dangger-container .img-not-found {
-    width: 151px;
-    width: 625px;
+.dangger-container .dangger-image {
+    max-height: 180px;
+    /* width: 625px; */
     margin: 2rem auto;
 }
 
