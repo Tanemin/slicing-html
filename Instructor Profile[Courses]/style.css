@@ -25,6 +25,7 @@ header {
   flex-direction: row;
   align-items: center;
   margin-bottom: 50px;
+  width: 40%;
 }
 
 .operations__item {
