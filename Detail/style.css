@@ -23,20 +23,100 @@
     margin-top: 50px;
     width: 100%;
     clip-path: polygon(0 0, 100% 0, 95% 100%, 5% 100%);
-    border-radius: 50px;
+    border-radius: 150px 150px 0 0;
 }
 
 .detail-content {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    /* margin: 50px; */
+    grid-template-columns: 1fr auto;
 }
 .detail-content .detail-information {
-    margin: 0 50px;
+    /* background-color: red; */
 }
-.detail-content .detail-transaction {
-    margin: 0 50px;
+.detail-content .detail-information .detail-about {
+    width: 600px;
+    /* background-color: aqua; */
+    margin: 20px auto;
+    
+    /* text-align: justify; */
+}
 
-}.detail-content img , .detail-review img {
+.detail-content .detail-information .detail-about .detail-galery {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+.detail-content h3 {
+    font-size: 22px;
+line-height: 28px;
+margin: 20px 0;
+}
+.detail-content p {
+    font-size: 16px;
+line-height: 28px;
+margin-top: 20px;
+}
+
+img {
+    width: 100%;
+    border-radius: 15px;
+} 
+.detail-content .detail-transaction {
+    /* background-color: green; */
+    width: 450px;
+
+}
+.detail-content .detail-transaction img ,
+ .detail-review img {
     width: 100px;
+}
+
+.detail-transaction button {
+    width: 250px;
+height: 50px;
+
+background: #F7C531;
+    padding: 16px 0;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    border-radius: 32px 32px 15px 15px;
+}
+
+.detail-transaction button:hover {
+    background-color: #ffa500;
+    font-weight: bolder;
+}
+
+ .ingredient-item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    list-style: none;
+
+}
+.detail-review {
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+.detail-review .item-review {
+    /* background-color: blueviolet; */
+}
+.detail-review img {
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    
+  object-fit: cover;
+}
+.detail-review .list-review .review-account {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 16px;
+}
+.detail-review .form-review {
+    /* background-color: blue; */
+    width: 450px;
 }
