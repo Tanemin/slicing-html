@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap"
         rel="stylesheet" />
 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../Nav and Footer/style.css">
     <link rel="stylesheet" href="./style.css">
 </head>
@@ -19,14 +20,90 @@
             <h1>🌼 Tanemin</h1>
         </div>
         <div class="nav-menu">
+            <div class="nav-search">
+                <i class="bi bi-search" style="font-size: 24px; color: #8B8BA5;"></i>
+                <input type="text" placeholder="Search for anything">
+            </div>
             <div class="nav-list">
                 <a href="" class="nav-item active">Home</a>
-                <a href="" class="nav-item">Beverages</a>
-                <a href="" class="nav-item">Chef</a>
-                <a href="" class="nav-item">Ingredient</a>
-                <a href="" class="nav-item">Stories</a>
-                </ul>
-                <a href="" class="btn-me">MyKitchen</a>
+                <a href="" class="nav-item">Productivity</a>
+                <!-- <a href="" class="nav-item">Ingredient</a>
+                    <a href="" class="nav-item">Stories</a> -->
+                <div class="nav-item">
+                    <button id="btnShop">
+                        <i class="bi bi-chevron-compact-down" style=" color: #8B8BA5;"></i> Shop
+                    </button>
+                    <div id="dropdownShop" class="dropdown-shop">
+                        <a href="" class="shop-item">
+                            <p><i class="bi bi-cart-plus"></i></p>
+                            <p>Shop Now</p>
+                            <p ><i class="bi bi-chevron-compact-right"></i></p>
+                        </a>
+                        <a href="" class="shop-item">
+                            <p><i class="bi bi-stars"></i></p>
+                            <p>Best Plant</p>
+                            <p ><i class="bi bi-chevron-compact-right"></i></p>
+                        </a>
+                        <a href="" class="shop-item">
+                            <p><i class="bi bi-people"></i></p>
+                            <p>Recomendations For You</p>
+                            <p ><i class="bi bi-chevron-compact-right"></i></p>
+                        </a>
+                            <button class="shop-item" id="btnShop">
+                                <p><i class="bi bi-filter"></i></p>
+                                <p>Shop Filter</p>
+                                <p ><i class="bi bi-chevron-compact-right"></i></p>
+                            </button>
+                    </div>
+                </div>
+
+                <a href="" class="nav-item">Company</a>
+            </div>
+            <div class="nav-list-button">
+                <div class="btn-border">
+                    <button>
+                        <i class="bi bi-cart-fill" style="font-size: 24px; color: black;"></i>
+                    </button>
+                    <div class="btn-notification">
+                        <button id="btnNotification">
+                            <i class="bi bi-bell-fill" style="font-size: 24px; color: black;"></i>
+                        </button>
+                        <div id="dropdownNotification" class="dropdown-notification">
+                            <div class="nav-notification-header">
+                                <h2>Notifications</h2>
+                                <button>Settings</button>
+                            </div>
+                            <hr>
+                            <div class="nav-notification-content">
+                                <p>No Notifications</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-profile">
+                    <button id="btnProfile">
+                        <img src="./../Detail/assets/main poster.png" alt="">
+                    </button>
+                    <div id="dropdownProfile" class="dropdown-profile">
+                        <div class="profile-card">
+                            <img src="./../Detail/assets/main poster.png" alt="">
+                            <div id="dropdownProfile" class="profile-account">
+                                <p class="profile-name">Irwan Gumilar</p>
+                                <p>irwan@tanemin.co.id</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <a href="">My Profile</a>
+                        <a href="">Cart</a>
+                        <a href="">Notifications</a>
+                        <hr>
+                        <a href="">Setting</a>
+                        <a href="">About</a>
+                        <hr>
+                        <a href="">Logout</a>
+                    </div>
+
+                </div>
             </div>
     </header>
     <main>
@@ -67,7 +144,7 @@
                                 <img src="./assets/main poster.png" alt="">
                                 <div class="account-detail">
                                     <h4>Via Triwahyuni</h4>
-                                    <p>Vegan Chef</p>
+                                    <p class="label">Vegan Chef</p>
                                     <p>⭐️⭐️⭐️⭐️⭐️ | 4.8/5</p>
                                 </div>
                             </div>
@@ -82,7 +159,7 @@
                                 <div class="review-photo"><img src="./assets/main poster.png" alt=""></div>
                                 <div class="account-detail">
                                     <h4>Fauzi Kurniawan</h4>
-                                    <p>Vegan Chef</p>
+                                    <p class="label">Vegan Chef</p>
                                     <p>⭐️⭐️⭐️⭐️⭐️ | 4.8/5</p>
                                 </div>
                             </div>
@@ -106,28 +183,28 @@
                             <img src="./assets/main poster.png" alt="">
                             <div class="additional-details">
                                 <h4>Bawang Putih</h4>
-                                <p>12 kg</p>
+                                <p class="label">12 kg</p>
                             </div>
                         </li>
                         <li class="additional-item">
                             <img src="./assets/main poster.png" alt="">
                             <div class="additional-details">
-                                <h4>pewarna</h4>
-                                <p>1 liter</p>
+                                <h4>Pewarna</h4>
+                                <p class="label">1 liter</p>
                             </div>
                         </li>
                         <li class="additional-item">
                             <img src="./assets/main poster.png" alt="">
                             <div class="additional-details">
                                 <h4>Santan Kit</h4>
-                                <p>1 Pack</p>
+                                <p class="label">1 Pack</p>
                             </div>
                         </li>
                         <li class="additional-item">
                             <img src="./assets/main poster.png" alt="">
                             <div class="additional-details">
                                 <h4>lemon</h4>
-                                <p>2 ons</p>
+                                <p class="label">2 ons</p>
                             </div>
                         </li>
                     </ul>
@@ -137,14 +214,14 @@
                             <img src="./assets/main poster.png" alt="">
                             <div class="additional-details">
                                 <h4>Chef's Knives</h4>
-                                <p>1 kit</p>
+                                <p class="label">1 kit</p>
                             </div>
                         </li>
                         <li class="additional-item">
                             <img src="./assets/main poster.png" alt="">
                             <div class="additional-details">
                                 <h4>mangkock</h4>
-                                <p>2 variant</p>
+                                <p class="label">2 variant</p>
                             </div>
                         </li>
                     </ul>
@@ -186,6 +263,48 @@
         </div>
         <div class="footer-copyright">All Rights Reserved Tanemin &#169; 2021, Dicoding Academy</div>
     </footer>
+    <script>
+        const btnshop = document.querySelector('#btnShop');
+        const btnnotif = document.querySelector('#btnNotification');
+        const btnprofile = document.querySelector('#btnProfile');
+
+        const dropdownShop = document.querySelector('#dropdownShop')
+        const dropdownNotification = document.querySelector('#dropdownNotification')
+        const dropdownProfile = document.querySelector('#dropdownProfile')
+
+        const main = document.querySelector('main');
+
+        
+        btnshop.addEventListener('click', (event) => {
+            event.preventDefault()
+            dropdownShop.classList = 'dropdown-shop-active';
+            dropdownNotification.classList = 'dropdown-notification';
+            dropdownProfile.classList = 'dropdown-profile';
+        })
+        btnnotif.addEventListener('click', (event) => {
+            event.preventDefault()
+            dropdownShop.classList = 'dropdown-shop';
+            dropdownNotification.classList = 'dropdown-notification-active';
+            dropdownProfile.classList = 'dropdown-profile';
+        })
+        btnprofile.addEventListener('click', (event) => {
+            event.preventDefault()
+
+            dropdownShop.classList = 'dropdown-shop';
+            dropdownNotification.classList = 'dropdown-notification';
+            dropdownProfile.classList = 'dropdown-profile-active';
+        })
+
+
+
+        main.addEventListener('click', (event) => {
+            event.preventDefault()
+            dropdownShop.classList = 'dropdown-shop';
+            dropdownNotification.classList = 'dropdown-notification';
+            dropdownProfile.classList = 'dropdown-profile';
+        })
+
+    </script>
 </body>
 
 </html>
