@@ -112,13 +112,13 @@ a, button {
 .nav-bar .nav-menu .nav-list-button .btn-border {
     background-color: #F7C531;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     padding: 10px 24px;
     border-radius: 32px 32px 15px 15px;
 }
 .nav-bar .nav-menu .nav-list-button button  img{
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
     object-fit: cover;
     object-position: center;
     border-radius: 100%;
@@ -130,7 +130,7 @@ a, button {
 .nav-bar .nav-menu .btn-notification .dropdown-notification-active {
     position: absolute;
     background-color: white;
-    right: 110px;
+    right: 24px;
     top: 80px;
     box-shadow: 0 4px 8px 3px rgba(0, 0, 0, 0.2);
     line-height: 32px;
@@ -195,6 +195,10 @@ a, button {
     border: 1px solid #e5e5e5;
     margin: 10px 0;
 }
+
+
+
+
 
 .footer {
     display: grid;
