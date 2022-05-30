@@ -55,6 +55,20 @@ h1.text-hero{
     color: #8B8BA5;
 }
 
+.text-hero .link{
+    margin-top: 50px;
+    width: 376px;
+    height: 68px;
+    left: 243px;
+    top: 468px;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 34px;
+    
+    color: #8B8BA5;
+}
 
 .text-hero a{
     font-size: 20px;
@@ -71,7 +85,7 @@ h1.text-hero{
     
 }
 
-.form{
+.form {
     width: 320px;
     height: 455px;
     left: 864px;
@@ -81,6 +95,10 @@ h1.text-hero{
     margin: auto;
     display: flex;
     /* justify-content: center;  */
+}
+
+.form-group{
+    margin-top: 24px;
 }
 
 .form-control{
@@ -111,6 +129,7 @@ button.secondary{
     text-align: center;
 }
 .text-or {
+    width: 314px;
     font-size: 16px;
     color: #8B8BA5;
     font-weight: 400px;
@@ -164,8 +183,15 @@ button.secondary{
     color: #272042;
     margin-bottom: 30px;
 }
+
+.text-or2 {
+    font-size: 16px;
+    color: #8B8BA5;
+    font-weight: 400px;
+    text-align: center;
+}
 .rectangle{
-    margin-top: -10px;
+    margin-top: -18px;
     margin-left: 28%;
 
     width: 229px;
@@ -177,14 +203,4 @@ button.secondary{
     border-radius: 100px;
 }
 
-/* .rectangle2{
-    margin: -10;
-    width: 97px;
-    height: 8px;
-    left: 242px;
-    top: 298px;
-
-    background: #FBE0DC;
-    border-radius: 100px;
-} */
 
