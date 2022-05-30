@@ -108,7 +108,7 @@ h3 {
 
 .detail-content .detail-transaction {
     width: 250px;
-    margin-left: auto;
+    margin-right: auto;
 }
 
 .detail-transaction .price {
@@ -130,6 +130,7 @@ h3 {
     padding: 16px 0;
     font-weight: bold;
     cursor: pointer;
+    color: black;
     text-align: center;
     border: none;
     border-radius: 32px 32px 15px 15px;

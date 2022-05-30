@@ -9,26 +9,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap"
         rel="stylesheet" />
 
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../Nav and Footer/style.css">
+    <link rel="stylesheet" href="../Nav and Footer/responsives.css">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsives.css">
 </head>
 
 <body>
     <header class="nav-bar">
+        <div class="nav-hamburger">
+            <button id="btnHamburger"><i class="bi bi-list" style="font-size: 30px;"></i></button>
+        </div>
         <div class="nav-logo">
-            <h1>🌼 Tanemin</h1>
+            <h1>🌼</h1>
+            <h1 class="company-name">Tanemin</h1>
         </div>
         <div class="nav-menu">
-            <div class="nav-search">
-                <i class="bi bi-search" style="font-size: 24px; color: #8B8BA5;"></i>
-                <input type="text" placeholder="Search for anything">
-            </div>
-            <div class="nav-list">
+
+            <div class="nav-list" id="navList">
                 <a href="" class="nav-item active">Home</a>
                 <a href="" class="nav-item">Productivity</a>
-                <!-- <a href="" class="nav-item">Ingredient</a>
-                    <a href="" class="nav-item">Stories</a> -->
                 <div class="nav-item">
                     <button id="btnShop">
                         <i class="bi bi-chevron-compact-down" style=" color: #8B8BA5;"></i> Shop
@@ -37,27 +38,29 @@
                         <a href="" class="shop-item">
                             <p><i class="bi bi-cart-plus"></i></p>
                             <p>Shop Now</p>
-                            <p ><i class="bi bi-chevron-compact-right"></i></p>
+                            <p><i class="bi bi-chevron-compact-right"></i></p>
                         </a>
                         <a href="" class="shop-item">
                             <p><i class="bi bi-stars"></i></p>
                             <p>Best Plant</p>
-                            <p ><i class="bi bi-chevron-compact-right"></i></p>
+                            <p><i class="bi bi-chevron-compact-right"></i></p>
                         </a>
                         <a href="" class="shop-item">
                             <p><i class="bi bi-people"></i></p>
                             <p>Recomendations For You</p>
-                            <p ><i class="bi bi-chevron-compact-right"></i></p>
+                            <p><i class="bi bi-chevron-compact-right"></i></p>
                         </a>
-                            <button class="shop-item" id="btnShop">
-                                <p><i class="bi bi-filter"></i></p>
-                                <p>Shop Filter</p>
-                                <p ><i class="bi bi-chevron-compact-right"></i></p>
-                            </button>
+                        <button class="shop-item" id="btnShop">
+                            <p><i class="bi bi-filter"></i></p>
+                            <p>Shop Filter</p>
+                            <p><i class="bi bi-chevron-compact-right"></i></p>
+                        </button>
                     </div>
                 </div>
-
-                <a href="" class="nav-item">Company</a>
+            </div>
+            <div class="nav-search">
+                <i class="bi bi-search" style="font-size: 24px; color: #8B8BA5;"></i>
+                <input type="text" placeholder="Search for anything">
             </div>
             <div class="nav-list-button">
                 <div class="btn-border">
@@ -101,10 +104,11 @@
                             <hr>
                             <a href="">Logout</a>
                         </div>
-    
+
                     </div>
                 </div>
             </div>
+        </div>
     </header>
     <main>
         <div class="detail-container">
@@ -116,6 +120,66 @@
 
             </div>
             <div class="detail-content">
+                <div class="detail-transaction">
+                    <form action="">
+                        <h3>Buy this Plant</h3>
+                        <p class="price">$280,000</p>
+                        <p class="label">Buy and Improve your Plants</p>
+                        <button>Buy Plant</button>
+                    </form>
+                    <div class="ingredients">
+                        <h3>Ingredients</h3>
+                        <ul class="transaction-additional">
+                            <li class="additional-item">
+                                <img src="./assets/main poster.png" alt="">
+                                <div class="additional-details">
+                                    <h4>Bawang Putih</h4>
+                                    <p class="label">12 kg</p>
+                                </div>
+                            </li>
+                            <li class="additional-item">
+                                <img src="./assets/main poster.png" alt="">
+                                <div class="additional-details">
+                                    <h4>Pewarna</h4>
+                                    <p class="label">1 liter</p>
+                                </div>
+                            </li>
+                            <li class="additional-item">
+                                <img src="./assets/main poster.png" alt="">
+                                <div class="additional-details">
+                                    <h4>Santan Kit</h4>
+                                    <p class="label">1 Pack</p>
+                                </div>
+                            </li>
+                            <li class="additional-item">
+                                <img src="./assets/main poster.png" alt="">
+                                <div class="additional-details">
+                                    <h4>lemon</h4>
+                                    <p class="label">2 ons</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tools">
+                        <h3>Special Tools</h3>
+                        <ul class="transaction-additional">
+                            <li class="additional-item">
+                                <img src="./assets/main poster.png" alt="">
+                                <div class="additional-details">
+                                    <h4>Chef's Knives</h4>
+                                    <p class="label">1 kit</p>
+                                </div>
+                            </li>
+                            <li class="additional-item">
+                                <img src="./assets/main poster.png" alt="">
+                                <div class="additional-details">
+                                    <h4>mangkock</h4>
+                                    <p class="label">2 variant</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
                 <div class="detail-information">
                     <h3>About Course</h3>
                     <p>This lesson is aimed to give you the confidence to chop like a pro. Proper knife skills are
@@ -172,60 +236,7 @@
                     </ul>
 
                 </div>
-                <div class="detail-transaction">
-                    <h3>Buy this Plant</h3>
-                    <p class="price">$280,000</p>
-                    <p class="label">Buy and Improve your Plants</p>
-                    <button>Buy Plant</button>
-                    <h3>Ingredients</h3>
-                    <ul class="transaction-additional">
-                        <li class="additional-item">
-                            <img src="./assets/main poster.png" alt="">
-                            <div class="additional-details">
-                                <h4>Bawang Putih</h4>
-                                <p class="label">12 kg</p>
-                            </div>
-                        </li>
-                        <li class="additional-item">
-                            <img src="./assets/main poster.png" alt="">
-                            <div class="additional-details">
-                                <h4>Pewarna</h4>
-                                <p class="label">1 liter</p>
-                            </div>
-                        </li>
-                        <li class="additional-item">
-                            <img src="./assets/main poster.png" alt="">
-                            <div class="additional-details">
-                                <h4>Santan Kit</h4>
-                                <p class="label">1 Pack</p>
-                            </div>
-                        </li>
-                        <li class="additional-item">
-                            <img src="./assets/main poster.png" alt="">
-                            <div class="additional-details">
-                                <h4>lemon</h4>
-                                <p class="label">2 ons</p>
-                            </div>
-                        </li>
-                    </ul>
-                    <h3>Special Tools</h3>
-                    <ul class="transaction-additional">
-                        <li class="additional-item">
-                            <img src="./assets/main poster.png" alt="">
-                            <div class="additional-details">
-                                <h4>Chef's Knives</h4>
-                                <p class="label">1 kit</p>
-                            </div>
-                        </li>
-                        <li class="additional-item">
-                            <img src="./assets/main poster.png" alt="">
-                            <div class="additional-details">
-                                <h4>mangkock</h4>
-                                <p class="label">2 variant</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+                
             </div>
 
         </div>
@@ -267,14 +278,17 @@
         const btnshop = document.querySelector('#btnShop');
         const btnnotif = document.querySelector('#btnNotification');
         const btnprofile = document.querySelector('#btnProfile');
+        const btnHamburger = document.querySelector('#btnHamburger')
+
 
         const dropdownShop = document.querySelector('#dropdownShop')
         const dropdownNotification = document.querySelector('#dropdownNotification')
         const dropdownProfile = document.querySelector('#dropdownProfile')
+        const navlist = document.querySelector('#navList')
 
         const main = document.querySelector('main');
 
-        
+
         btnshop.addEventListener('click', (event) => {
             event.preventDefault()
             dropdownShop.classList = 'dropdown-shop-active';
@@ -294,7 +308,10 @@
             dropdownNotification.classList = 'dropdown-notification';
             dropdownProfile.classList = 'dropdown-profile-active';
         })
-
+        btnHamburger.addEventListener('click', (event) => {
+            event.preventDefault()
+            navlist.classList.add('active')
+        })
 
 
         main.addEventListener('click', (event) => {
@@ -302,6 +319,7 @@
             dropdownShop.classList = 'dropdown-shop';
             dropdownNotification.classList = 'dropdown-notification';
             dropdownProfile.classList = 'dropdown-profile';
+            navlist.classList.remove('active')
         })
 
     </script>
