@@ -1,0 +1,105 @@
+@media screen and (max-width: 1200px) {
+
+    .nav-bar .nav-hamburger {
+        margin: auto;
+        display: block !important;
+    }
+    .nav-bar {
+
+        grid-template-columns: auto auto 1fr;
+        /* background-color: red; */
+    }
+    .nav-bar .nav-menu{
+        grid-template-columns: 1fr auto;
+    }
+    .nav-bar .nav-menu .nav-list {
+        /* display: none; */
+        position: absolute;
+        left: -500px;
+        top: 72px;
+        grid-template-columns: 1fr;
+        background-color: white;
+        line-height: 32px;
+        padding: 20px;
+        width: 350px;
+    }
+    .nav-bar .nav-menu .nav-list.active {
+        left: 0;
+    }
+    .nav-bar .nav-menu .nav-list .nav-item {
+        
+        border-bottom: 1px solid #e5e5e5;
+    }
+    .nav-bar .nav-menu .nav-list .nav-item:hover {
+        border-right: 5px solid #8B8BA5;
+        border-bottom: none;
+    }
+
+    .nav-bar .nav-menu .nav-list .dropdown-shop-active {
+        position: fixed;
+        background-color: white;
+        left:0;
+        top: 270px;
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.0);
+        width: 350px;
+        padding: 0 20px 20px 100px;
+        display: grid;
+        text-align: center;
+    }
+    .nav-bar .nav-menu .nav-list-button {
+        grid-template-columns: auto;
+        margin-left: auto;
+        max-width: 216px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .nav-bar {
+        grid-template-columns: auto auto 1fr;
+        
+    }
+    
+    .nav-bar .nav-logo {
+        text-align: right;
+    }
+    
+    .nav-bar .nav-menu .nav-search {
+        position: absolute;
+        background-color: white;
+        width: 50%;
+        min-width: 300px;
+        z-index: 100;
+        top: 85px;
+        left: 10px;
+        /* height: 36px; */
+    }
+    
+    .nav-bar .nav-menu .nav-list-button {
+        margin-left: auto;
+    }
+    .nav-bar .nav-menu .nav-list {
+        /* background-color: red; */
+        padding-top: 70px;
+    }
+    .nav-bar .nav-menu .nav-list .dropdown-shop-active{
+        top: 300px;
+        /* background-color: red; */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .nav-bar {
+        /* padding: 20px; */
+    }
+
+    .nav-logo .company-name {
+        display: none;
+    }
+
+    .nav-menu {
+        grid-template-columns: auto;
+    }
+    .footer .footer-content{
+        grid-template-columns: 1fr;
+    }
+}
