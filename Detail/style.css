@@ -108,7 +108,7 @@ h3 {
 
 .detail-content .detail-transaction {
     width: 250px;
-    margin-right: auto;
+    margin-left: auto;
 }
 
 .detail-transaction .price {
