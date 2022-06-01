@@ -10,8 +10,8 @@
 
 .container{
     /* width: 1140 px; */
-    margin: 0 ;
-    padding: 100px 256px 150px 142px;
+    margin-top: 24px; ;
+    /* padding: 100px 256px 150px 142px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,6 +23,7 @@
     height: 306px;
     left: 242px;
     top: 250px;
+    margin-right: 200px;
 } 
 
 h1.text-hero{
@@ -72,7 +73,9 @@ h1.text-hero{
 
 .text-hero a{
     font-size: 20px;
-    color: #F7C531;
+    color: #4E944F;
+    /* min-height: 44px;
+    min-width: 44px; */
 }
 
 .control-label {
@@ -90,11 +93,7 @@ h1.text-hero{
     height: 455px;
     left: 864px;
     top: 200px;
-    padding-left: 100px;
-    /* max-width: 600px;
-    margin: auto;
-    display: flex;
-    /* justify-content: center;  */
+    padding-right: 100px;
 }
 
 .form-group{
@@ -118,11 +117,11 @@ button.secondary{
     width: 314px;
     height: 50px;
     margin: 24px 0;
-    background-color: #F7C531;
+    background-color: #4E944F;
     padding: 10px 40px;
     border: none;
     /* border-radius: 70px; */
-    color: #272042;
+    color: #ffff;
     font-size: 18px;
     font-weight: bold;
     border-radius: 40px 40px 20px 20px;
@@ -172,7 +171,7 @@ button.secondary{
 /* Register page */
 .register{
     margin: 100px auto;
-    width: 700px;
+    width: 100%;
     padding: 10px;
     text-align: center;
 
@@ -191,16 +190,18 @@ button.secondary{
     text-align: center;
 }
 .rectangle{
-    margin-top: -18px;
-    margin-left: 28%;
+    margin-top: -18px ; 
+    margin-left: 38%; 
 
     width: 229px;
     height: 8px;
     left: 566px;
     top: 248px;
     
-    background: #FBE0DC;
-    border-radius: 100px;
+    background: #6EB257;
+    border-radius: 100px ;
+    /* position: sticky !important; */
+    
 }
 
 
