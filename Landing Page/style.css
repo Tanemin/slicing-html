@@ -73,7 +73,51 @@ body {
     left: 45%;
 }
 
-.featured {
+.operations {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 24px;
+  }
+  
+  .operations__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2rem;
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+  }
+  
+  .operations__item a {
+    text-decoration: none;
+    color: #272042;
+  }
+  
+  .operations__item--active a {
+    color: #4E944F;
+    font-weight: 500;
+    position: relative;
+  }
+  
+  .operations__item--active a::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #4E944F;
+    margin-top: 10px;
+  }
+  
+  .operations__item a:hover {
+    color: #4E944F;
+  }
+
+  .featured {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -103,62 +147,68 @@ body {
     color: #272042;
 }
 
-.featured_nav {
-    margin-top: 30px;
-
-    width: 40%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.content-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4rem;
 }
 
-.featured_nav li {
-    list-style: none;
-
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 25px;
-    text-align: center;
-    color: #272042;
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-.item_list {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 30px;
-    grid-row-gap: 64px;
-
-    width: 100%;
-    margin-top: 50px;
+.card-content__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
 }
 
-.card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.card-content__image::before {
+  z-index: -2;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 102%;
+  height: 102%;
+  background-color: #B4E197;
+  border-radius: 40px 60px 60px 60px;
 }
 
-.card_title {
-    margin-top: 20px;
-    font-style: normal;
+.card-content__image::after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 101%;
+  height: 101%;
+  background-color: #E9EFC0;
+  border-radius: 65px 65px 65px 65px;
+}
+
+.card-content__image img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 80px 65px 65px 65px;
+}
+
+.food-name {
+    font-size: 2.2rem;
     font-weight: 500;
-    font-size: 22px;
-    line-height: 28px;
-    text-align: center;
-    color: #272042;
-}
+  }
+  
+  .food-author {
+    font-size: 1.6rem;
+    font-weight: 300;
+  }
 
-.card_description {
-    margin-top: 8px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    text-align: center;
-    color: #8b8ba5;
-}
 
 .review-content-star {
     margin-top: 12px;
